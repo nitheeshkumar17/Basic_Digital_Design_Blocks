@@ -17,12 +17,12 @@ module single_sram #(
 always @(posedge clk) begin //WRITE
 
 if (we)
-ram[addr] <= data;
+mem[addr] <= data;
 
 addr_r <= addr;
 
 end
 
-assign q = ram[addr_r]; //READ
+assign q = mem[addr_r]; //READ
 
 endmodule

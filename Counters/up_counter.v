@@ -1,5 +1,5 @@
 // 4-Bit Up Counter
-// Created by Notheesh Kumar - Aug 03 2020
+// Created by Nitheesh Kumar - Aug 03 2020
 
 module up_counter (
 	input clk, // Clock Signal

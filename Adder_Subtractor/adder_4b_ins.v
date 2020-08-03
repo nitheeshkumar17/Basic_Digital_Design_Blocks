@@ -7,7 +7,7 @@ module adder_4b_ins (
 	output [3:0] sum,
 	output cout);
 
-wire [3:0] c; // Intermediate Carry
+wire [2:0] c; // Intermediate Carry
 
 full_adder FA1 (.a(a[0]), .b(b[0]), .cin(cin), .sum(sum[0]), .cout(c[0]));
 full_adder FA2 (.a(a[1]), .b(b[1]), .cin(c[0]), .sum(sum[1]), .cout(c[1]));

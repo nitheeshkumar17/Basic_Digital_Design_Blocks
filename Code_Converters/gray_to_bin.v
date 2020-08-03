@@ -1,11 +1,11 @@
 // Gray to Binary Code Converter
 // Created by Nitheesh Kumar - Aug 02 2020
 
-module gray_to_bin #(parameter Width = 2) (
+module gray_to_bin #(parameter Width = 5) (
 	input [Width-1:0] a_gray,
 	output [Width-1:0] a_bin);
 
-assign a_gray[Width-1] = a_bin[Width-1];
+assign a_bin[Width-1] = a_gray[Width-1];
 
 genvar i;
 

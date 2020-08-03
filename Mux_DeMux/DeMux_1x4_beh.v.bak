@@ -8,10 +8,10 @@ module DeMux_1x4_beh (
 
 always @(sel or A) begin
 case (sel)
-2'b00 : begin Y[0] <= A; Y[3:1] <= 3'b0; end
-2'b01 : begin Y[1] <= A; Y[3:2] <= 2'b0; Y[0] <= 1'b0; end
-2'b10 : begin Y[2]<= A; Y[3] <= 1'b0; Y[1:0] <= 1'b0; end
-2'b11 : begin Y[3]<= A; Y[2:0] = 3'b0; end
+2'b00 : Y[0]<= A;
+2'b01 : Y[1]<= A;
+2'b10 : Y[2]<= A;
+2'b11 : Y[3]<= A;
 default : Y<= 4'b0;
 endcase
 end

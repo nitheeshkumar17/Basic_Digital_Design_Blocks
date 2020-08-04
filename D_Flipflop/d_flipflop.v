@@ -5,6 +5,7 @@ module d_flipflop (
 	input D,clk,
 	output reg Q);
 
+
 always @(posedge clk) begin
 
 Q <= D;
